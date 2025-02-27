@@ -6,24 +6,24 @@
 
 from os import system, name
 
-def clearScreen(): # Compatibility, Deprecated.
+def clearScreen():  # Compatibility, Deprecated.
     '''Clear Screen'''
-    system('cls' if name == 'nt' else 'clear') # Clear Screen depending on OS
+    system('cls' if name == 'nt' else 'clear')  # Clear Screen depending on OS
 
 def clear_screen():
     '''Clear Screen'''
-    system('cls' if name == 'nt' else 'clear') # Clear Screen depending on OS
+    system('cls' if name == 'nt' else 'clear')  # Clear Screen depending on OS
 
-def openFile(fName): # Compatibility, Deprecated.
+def openFile(F_NAME):  # Compatibility, Deprecated.
     '''Open file in UTF-8'''
-    tList = []
-    with open(fName, "r", encoding="utf-8") as f: # Open the File and Read the Lines into an Array
-        tList = [line.strip() for line in f]
-    return tList
+    T_LIST = []
+    with open(F_NAME, "r", encoding="utf-8") as F:  # Open the File and Read the Lines into an Array
+        T_LIST = [LINE.strip() for LINE in F]
+    return T_LIST
 
-def open_file(fName):
+def open_file(F_NAME):
     '''Open file in UTF-8 encoding'''
-    tList = []
-    with open(fName, "r", encoding="utf-8") as f: # Open the File and Read the Lines into an Array
-        tList = [line.strip() for line in f]
-    return tList
+    T_LIST = []
+    with open(F_NAME, "r", encoding="utf-8") as F:  # Open the File and Read the Lines into an Array
+        T_LIST = [LINE.strip() for LINE in F]
+    return T_LIST
