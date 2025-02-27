@@ -15,7 +15,7 @@ def clear_screen():
     system('cls' if name == 'nt' else 'clear') # Clear Screen depending on OS
 
 def openFile(fName): # Compatibility, Deprecated.
-    ''Open file in UTF-8'''
+    '''Open file in UTF-8'''
     tList = []
     with open(fName, "r", encoding="utf-8") as f: # Open the File and Read the Lines into an Array
         tList = [line.strip() for line in f]
