@@ -8,6 +8,18 @@ namespace libAnnaC
 {
     public static class libAnna
     {
+        public static string WHITE = "\u001b[37m";
+        public static string BLUE = "\u001b[34m";
+        public static string YELLOW = "\u001b[33m";
+        public static string GREEN = "\u001b[32m";
+        public static string RED = "\u001b[31m";
+        public static string CYAN = "\u001b[36m";
+        public static string PURPLE = "\u001b[35m";
+        public static string BLACK = "\u001b[30m";
+        public static string BOLD = "\u001b[1m";
+        public static string NOBOLD = "\u001b[22m";
+        public static string ENDC = "\u001b[0m";
+
         public static string Capitalize(this string s)
         {
             if (string.IsNullOrEmpty(s))
