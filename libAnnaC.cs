@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,18 +8,17 @@ namespace libAnnaC
 {
     public static class libAnna
     {
-        public static string WHITE = "\u001b[37m";
-        public static string BLUE = "\u001b[34m";
-        public static string YELLOW = "\u001b[33m";
-        public static string GREEN = "\u001b[32m";
-        public static string RED = "\u001b[31m";
-        public static string CYAN = "\u001b[36m";
-        public static string PURPLE = "\u001b[35m";
-        public static string BLACK = "\u001b[30m";
-        public static string BOLD = "\u001b[1m";
-        public static string NOBOLD = "\u001b[22m";
-        public static string ENDC = "\u001b[0m";
-        private static Random rng = new Random();  
+        public const string WHITE = "\u001b[37m";
+        public const string BLUE = "\u001b[34m";
+        public const string YELLOW = "\u001b[33m";
+        public const string GREEN = "\u001b[32m";
+        public const string RED = "\u001b[31m";
+        public const string CYAN = "\u001b[36m";
+        public const string PURPLE = "\u001b[35m";
+        public const string BLACK = "\u001b[30m";
+        public const string BOLD = "\u001b[1m";
+        public const string NOBOLD = "\u001b[22m";
+        public const string ENDC = "\u001b[0m";
 
         public static string Capitalize(this string s)
         {
