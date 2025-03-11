@@ -19,6 +19,7 @@ namespace libAnnaC
         public static string BOLD = "\u001b[1m";
         public static string NOBOLD = "\u001b[22m";
         public static string ENDC = "\u001b[0m";
+        private static Random rng = new Random();  
 
         public static string Capitalize(this string s)
         {
@@ -27,6 +28,19 @@ namespace libAnnaC
             if (s.Length == 1)
                 return s.ToUpper();
             return s.Remove(1).ToUpper() + s.Substring(1);
+        }
+
+        public static void Shuffle<T>(this IList<T> list)  
+        {  
+            int n = list.Count;  
+            while (n > 1)
+            {  
+                n--;  
+                int k = rng.Next(n + 1);  
+                T value = list[k];  
+                list[k] = list[n];  
+                list[n] = value;  
+            }  
         }
     }
 }
