@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# Get the commit count
+COMMIT_COUNT=$(git rev-list --count --all)
+
+# Define the output file
+OUTPUT_FILE="XojoVersion.xojo_code"
+
+# Generate the C# file
+cat <<EOL > $OUTPUT_FILE
+Public Module libAnna
+  Public Const gitVersion As Integer = $COMMIT_COUNT
+End Module
+EOL
+
+echo "Updated $OUTPUT_FILE with commit count: $COMMIT_COUNT"

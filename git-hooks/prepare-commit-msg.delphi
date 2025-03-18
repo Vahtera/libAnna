@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Get the commit count
+COMMIT_COUNT=$(git rev-list --count --all)
+
+# Define the output file
+OUTPUT_FILE="CommitInfo.pas"
+
+# Generate the C# file
+cat <<EOL > $OUTPUT_FILE
+function GetVersion (): integer;
+begin
+  Result := $COMMIT_COUNT;
+end;
+EOL
+
+echo "Updated $OUTPUT_FILE with commit count: $COMMIT_COUNT"
