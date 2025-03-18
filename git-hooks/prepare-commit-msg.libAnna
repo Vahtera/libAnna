@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# Get the commit count
+COMMIT_COUNT=$(git rev-list --count --all)
+
+# Define the output file
+OUTPUT_FILE="version.txt"
+
+# Generate the C# file
+cat <<EOL > $OUTPUT_FILE
+$COMMIT_COUNT
+EOL
+
+echo "Updated $OUTPUT_FILE with commit count: $COMMIT_COUNT"
