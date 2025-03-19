@@ -15,6 +15,14 @@ Public Module libAnna
   Public Var englishVerbsIng As FolderItem
   Public Var englishNouns As FolderItem
   Public Var englishAdjectives As FolderItem
+  
+  ' English Wordlist FileNames
+  Public Var eVerbs As String
+  Public Var eVerbsPast As String
+  Public Var eVerbsIng As String
+  Public Var eNounsFromVerbs As String
+  Public Var eNouns As String
+  Public Var eAdjectives As String
 
   ' Version control from GitHub
   Public Var versionFile As FolderItem
@@ -44,6 +52,15 @@ Public Module libAnna
     englishAdjectives = libFolder.Child("english_adjectives.txt")
 
     versionFile = projectFolder.Child("XojoVersion.xojo_code")
+	
+	' Set up filename variables
+	eVerbs = "english_verbs.txt"
+	eVerbsPast = "english_verbs_past.txt"
+	eVerbsIng = "english_verbs_ing.txt"
+	eNounsFromVerbs = "english_nouns_from_verbs.txt"
+	eNouns = "english_nouns.txt"
+	eAdjectives = "english_adjectives.txt"
+	
   End Sub
   
   Public Function LoadFile(fileName As String) As String()
