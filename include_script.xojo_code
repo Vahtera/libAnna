@@ -1,6 +1,6 @@
 ' Xojo IDE Script to include external files.
 
-Dim project As XojoProject = XojoProject.Current
+Var project As XojoProject = XojoProject.Current
 Var projectFolder As FolderItem = XojoProject.Current.ProjectFolder
 Var libFolder As FolderItem = projectFolder.Child("libAnna")
 Var libAnna As FolderItem = libFolder.Child("libAnna.xojo_code")

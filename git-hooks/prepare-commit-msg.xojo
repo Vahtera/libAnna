@@ -8,8 +8,8 @@ OUTPUT_FILE="XojoVersion.xojo_code"
 
 # Generate the C# file
 cat <<EOL > $OUTPUT_FILE
-Public Module libAnna
-  Public Const gitVersion As Integer = $COMMIT_COUNT
+Public Module Git
+  Public Const Version As Integer = $COMMIT_COUNT
 End Module
 EOL
 
