@@ -1,8 +1,13 @@
 {
   "name": "libAnna",
-  "version": "32",
+  "version": "33",
   "main": "libAnna.js",
   "module": "libAnna.js",
   "type": "module",
   "private": true
+}
+{
+  "scripts": {
+    "postinstall": "node copyFiles.js"
+  }
 }
