@@ -4,13 +4,12 @@
 COMMIT_COUNT=$(git rev-list --count --all)
 
 # Define the output file
-OUTPUT_FILE="XojoVersion.xojo_code"
+OUTPUT_FILE="version.txt"
 
 # Generate the C# file
 cat <<EOL > $OUTPUT_FILE
-Public Module Git
-  Public Const Version As Integer = $COMMIT_COUNT
-End Module
+$COMMIT_COUNT
 EOL
 
 echo "Updated $OUTPUT_FILE with commit count: $COMMIT_COUNT"
+git add $OUTPUT_FILE

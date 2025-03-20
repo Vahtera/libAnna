@@ -1,3 +1,7 @@
+'
+' Remember to use "libAnna.Initialize" in main program before using 
+'
+
 Public Module libAnna
   Public Const libAnnaVersion As Integer = 1 ' Specifically the Xojo version of libAnna
   
