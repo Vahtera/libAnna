@@ -1,5 +1,12 @@
 // libAnna.js - Common functions for my projects.
 
+// remember to add the following line to scripts in the main App's package.json:
+// "install-libAnna": "npm install ./libAnna && node ./node_modules/libAnna/copyFiles.js"
+// Then install libAnna by running:
+// npm run install-libAnna
+// This needs to be run after updating libAnna.
+
+
 // Function to load words from a file (accepts filename as an argument)
 export async function loadWords(filename, setWords) {
   try {
