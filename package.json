@@ -1,6 +1,6 @@
 {
   "name": "libAnna",
-  "version": "33",
+  "version": "1.0.38",
   "main": "libAnna.js",
   "module": "libAnna.js",
   "type": "module",
