@@ -1,6 +1,9 @@
-const fs = require('fs');
-const ncp = require('ncp').ncp;
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
+import fsExtra from 'fs-extra';
+
+// Get the current directory of this module
+const __dirname = path.dirname(new URL(import.meta.url).pathname);
 
 // Define the source and destination directories
 const sourceDir = path.join(__dirname, 'libAnna');
@@ -20,7 +23,7 @@ fs.readdir(sourceDir, (err, files) => {
     const sourceFile = path.join(sourceDir, file);
     const destFile = path.join(destDir, file);
 
-    ncp(sourceFile, destFile, (err) => {
+    fsExtra.copy(sourceFile, destFile, (err) => {
       if (err) {
         return console.error(`Error copying file ${file}:`, err);
       }
