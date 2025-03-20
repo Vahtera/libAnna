@@ -6,6 +6,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "postinstall": "node copyFiles.js"
+    "postinstall": "node copyFiles.js",
+    "copy-files": "node copyFiles.js"
   }
 }
