@@ -13,7 +13,7 @@ export async function loadWords(filename, setWords) {
     const words = text.split("\n").map((word) => word.trim());
     setWords(words);
   } catch (error) {
-    console.error("Error loading words:", error);
+    console.error("Error loading file:", error);
   }
 }
 
