@@ -4,9 +4,7 @@
   "main": "libAnna.js",
   "module": "libAnna.js",
   "type": "module",
-  "private": true
-}
-{
+  "private": true,
   "scripts": {
     "postinstall": "node copyFiles.js"
   }
