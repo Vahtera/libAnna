@@ -1,0 +1,7 @@
+{
+  "name": "libAnna",
+  "version": "1.0.0",
+  "main": "libAnna.js",
+  "module": "libAnna.js",
+  "type": "module"
+}
